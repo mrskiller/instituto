@@ -22,13 +22,9 @@ public class SinsertarAlumno extends HttpServlet {
         
         String action=request.getParameter("action");
         
-        if (action.contains("update")){
-            
-            boAlumno.procesarUpdateAlumno(request, response);
-            
-        }else{
+        
             boAlumno.procesarInsertarPeticionalumno(request, response);
-        }
+        
     }
 
 

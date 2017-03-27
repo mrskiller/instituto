@@ -29,6 +29,10 @@ public class boAlumno {
     alumno.setEstudios(request.getParameter("estudios"));
     daoAlumno.insertaralumno(alumno.getExpediente(),alumno.getNombre(),alumno.getApellido(), alumno.getEstudios());
     }
+
+    public static void procesarPeticionInsertarAlumno(HttpServletRequest request, HttpServletResponse response) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
     
     

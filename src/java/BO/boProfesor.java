@@ -8,7 +8,6 @@ import java.sql.SQLException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 public class boProfesor {
     
     public static void  procesarInsertarPeticionprofesor (HttpServletRequest request,HttpServletResponse response)throws ClassNotFoundException, SQLException, IOException{

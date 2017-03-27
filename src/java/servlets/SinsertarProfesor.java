@@ -21,13 +21,9 @@ public class SinsertarProfesor extends HttpServlet {
         
         String action=request.getParameter("action");
         
-        if (action.contains("update")){
-            
-            boProfesor.procesarUpdateProfesor(request, response);
-            
-        }else{
+     
             boProfesor.procesarInsertarPeticionprofesor(request, response);
-        }
+        
     }
 
 
