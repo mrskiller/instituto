@@ -14,13 +14,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "insertarAlumno", urlPatterns = {"/insertarAlumno"})
+//@WebServlet(name = "SinsertarAlumno", urlPatterns = {"instituto/SinsertarAlumno"})
 public class SinsertarAlumno extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, ClassNotFoundException, SQLException {
         
-        String action=request.getParameter("action");
+        
         
         
             boAlumno.procesarInsertarPeticionalumno(request, response);

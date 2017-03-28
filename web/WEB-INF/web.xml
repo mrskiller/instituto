@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-    <display-name>Instituto</display-name>
-
-    <servlet>
-        <servlet-name>CreaSession</servlet-name>
-        <servlet-class>controladoresServlet.CreaSession</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>VerSession</servlet-name>
-        <servlet-class>controladoresServlet.VerSession</servlet-class>
-    </servlet>
-
+    <display-name>instituto</display-name>
     <servlet>
         <servlet-name>SinsertarAlumno</servlet-name>
         <servlet-class>servlets.SinsertarAlumno</servlet-class>
@@ -31,18 +21,37 @@
         <servlet-name>controladorSalumno</servlet-name>
         <servlet-class>servlets.controladorSalumno</servlet-class>
     </servlet>
-
-    <servlet-mapping>
-        <servlet-name>SinsertarAlumno</servlet-name>
-        <url-pattern>/SinsertarAlumno</url-pattern>
-    </servlet-mapping>
+    <servlet>
+        <servlet-name>controladorSprofesor</servlet-name>
+        <servlet-class>servlets.controladorSprofesor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SactualizarProfesor</servlet-name>
+        <servlet-class>servlets.SactualizarProfesor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SactualizarAlumno</servlet-name>
+        <servlet-class>servlets.SactualizarAlumno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SborrarAlumno</servlet-name>
+        <servlet-class>servlets.SborrarAlumno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SborrarProfesor</servlet-name>
+        <servlet-class>servlets.SborrarProfesor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SlistarAlumno</servlet-name>
+        <servlet-class>servlets.SlistarAlumno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SlistarProfesor</servlet-name>
+        <servlet-class>servlets.SlistarProfesor</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SinsertarProfesor</servlet-name>
         <url-pattern>/SinsertarProfesor</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SmostrarAlumno</servlet-name>
-        <url-pattern>/SmostrarAlumno</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SmostrarProfesor</servlet-name>
@@ -51,6 +60,42 @@
     <servlet-mapping>
         <servlet-name>controladorSalumno</servlet-name>
         <url-pattern>/controladorSalumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controladorSprofesor</servlet-name>
+        <url-pattern>/controladorSprofesor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SactualizarProfesor</servlet-name>
+        <url-pattern>/SactualizarProfesor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SactualizarAlumno</servlet-name>
+        <url-pattern>/SactualizarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SborrarAlumno</servlet-name>
+        <url-pattern>/SborrarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SborrarProfesor</servlet-name>
+        <url-pattern>/SborrarProfesor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SlistarAlumno</servlet-name>
+        <url-pattern>/SlistarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SlistarProfesor</servlet-name>
+        <url-pattern>/SlistarProfesor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SinsertarAlumno</servlet-name>
+        <url-pattern>/sinsertarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SmostrarAlumno</servlet-name>
+        <url-pattern>/smostrarAlumno</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

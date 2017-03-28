@@ -17,16 +17,11 @@ public class boProfesor {
     profesor.setApellido(request.getParameter("apellido"));
     profesor.setEspecialidad(request.getParameter("especialidad"));
         daoProfesor.insertarprofesor(profesor.getIdentificacion(), profesor.getNombre(), profesor.getApellido(), profesor.getEspecialidad());
-    response.sendRedirect("/instituto/SmostrarProfesor");
+    response.sendRedirect("/instituto/SinsertarProfesor");
 }
-    public static void procesarUpdateProfesor(HttpServletRequest request,HttpServletResponse response) throws ClassNotFoundException, SQLException{
-        
-    profesor profesor=new profesor();
-    profesor.setidentificacion(request.getParameter("identificacion"));
-    profesor.setNombre(request.getParameter("nombre"));
-    profesor.setApellido(request.getParameter("apellido"));
-    profesor.setEspecialidad(request.getParameter("especialidad"));
-        daoProfesor.insertarprofesor(profesor.getIdentificacion(), profesor.getNombre(), profesor.getApellido(), profesor.getEspecialidad());
-    
-}
+
+
+    public static void procesarPeticionInsertarProfesor(HttpServletRequest request, HttpServletResponse response) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
 }
